@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
+
 <body>
-    
+
+    <!-- Nav -->
+    <nav class="navbar">
+        <img src="assets/logo.png" alt="logo" class="logo">
+        <ul class="nav-items">
+            <li>Home</li>
+            <li>Our profile</li>
+            <li>Achievement</li>
+            <li>Message us</li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to our website</h1>
+        <img src="assets/school.png" alt="School">
+    </header>
+
+    <!-- Facilitations -->
+    <h2 style="margin-left: 170px;">Facilitations</h2>
+    <div class="facilitations">
+        <div>
+            <div class="cicle" style="background-image: url('assets/teacher.jpg');"></div>
+            <h4>Teacher</h4>
+        </div>
+        <div>
+            <div class="cicle" style="background-image: url('assets/sport_field.jpg');"></div>
+            <h4>Sport Field</h4>
+        </div>
+        <div>
+            <div class="cicle" style="background-image: url('assets/classroom.jpg');"></div>
+            <h4>Classroom</h4>
+        </div>
+    </div><hr>
+
+    <!-- Message Us -->
+    <div class="message_us">
+        <div>
+            <h2>Message Us</h2>
+            <label for="name">Nama :</label>
+            <input type="text" class="ipt" id="name" name="name" placeholder="Nama"><br>
+            <label for="birthdate">Tanggal Lahir :</label>
+            <input type="date" class="ipt" id="birthdate" name="birthdate"><br>
+            <label for="gender">Jenis Kelamin :</label>
+            <input type="radio" id="laki" name="gender" value="Laki-Laki" class="gender">
+            <label for="laki">Laki-Laki</label>
+            <input type="radio" id="perempuan" name="gender" value="Perempuan" class="gender">
+            <label for="perempuan">Perempuan</label><br>
+                        <label for="pesan">Pesan:</label><br>
+            <textarea id="message" name="message" placeholder="Pesan"></textarea><br>
+            <div>
+                <button id="submit" class="btn btn-green" onclick="submit()">Submit</button>
+            </div>
+        </div>
+        <div id="result">
+            <ul class="nav-result">
+                <li><p id="waktu" class="result"></p></li>
+                <li><p id="nama" class="result1"></p></li>
+                <li><p id="lahir"></p></li>
+                <li><p id="kelamin"></p></li>
+                <li><p id="pesan"></p></li>
+            </ul>
+        </div>
+    </div><hr>
+
+    <!-- Footer -->
+    <footer>
+		<p>Created by Rifqi Anshari</p>
+	</footer>
 </body>
+
 </html>

@@ -1,0 +1,171 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Logo */
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+/* Nav */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-items{
+    list-style-type: none;
+    /* border: 2px solid black; */
+}
+
+.nav-items li{
+    display: inline;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+      display: none;
+    }
+  }
+
+/* Header */
+
+header{
+    text-align: center;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* facilitations */
+
+.facilitations{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.facilitations div{
+    text-align: center;
+}
+
+.cicle{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* message us */
+
+textarea {
+    resize: none;
+    border-radius:5px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius:5px;
+}
+
+.ipt {
+    width: 280px;
+}
+
+.message_us{
+    margin-top: 50px;
+    margin-left: 20ch;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.pesan{
+    display: flex;
+    flex-flow: row wrap;;
+}
+
+#message{
+    height: 100px; 
+    width: 300px;
+    margin-left: 150px;
+    text-align: left;
+}
+
+/* button */
+
+.btn:hover {
+    background-color: #218838;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+.btn-green {
+    background-color: #28a745;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.5);
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    margin-top: 20px;
+    padding-left: 203px;
+    padding-right: 203px;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.5), 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+/* hasil */
+
+.nav-result{
+    list-style-type: none;
+}
+
+.result{
+    margin-top: 70px;
+}
+
+.result1{
+    margin-top: 50px;
+}
+
+#result{
+    width: 700px;
+    height: 350px;
+    border: 2px solid black;
+    margin-left: 50px;
+    margin: auto;
+}
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    text-align: right;
+}
