@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <nav class="navbar">
         <img src="assets/logo.png" alt="logo" class="logo">
         <ul class="nav-items">
-            <li>Home</li>
+            <li>home</li>
             <li>Our profile</li>
             <li>Achievement</li>
             <li>Message us</li>
@@ -23,7 +24,7 @@
 
     <!-- Header -->
     <header>
-        <h1>Welcome to our website</h1>
+        <h1>Hi <span id="namasaya"></span> Welcome to our website</h1>
         <img src="assets/school.png" alt="School">
     </header>
 
@@ -78,6 +79,10 @@
     <footer>
 		<p>Created by Rifqi Anshari</p>
 	</footer>
+    <script>
+        var elemen = document.getElementById("namasaya");
+        elemen.innerHTML = "Rifqi Anshari " + elemen.innerHTML;
+    </script>
 </body>
 
 </html>
