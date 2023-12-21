@@ -78,18 +78,18 @@
         <div>
             <h2 style="margin-bottom: 50px;">Message Us</h2>
             <label for="name">Nama :</label>
-            <input type="text" class="ipt" id="name" name="name" placeholder="Nama"><br>
+            <input type="text" class="ipt" id="name" name="name" placeholder="Nama" required><br>
             <label for="birthdate">Tanggal Lahir :</label>
-            <input type="date" class="ipt" id="birthdate" name="birthdate"><br>
+            <input type="date" class="ipt" id="birthdate" name="birthdate" required><br>
             <label for="gender">Jenis Kelamin :</label>
-            <input type="radio" id="laki" name="gender" value="Laki-Laki" class="gender">
+            <input type="radio" id="laki" name="gender" value="Laki-Laki" class="gender" required>
             <label for="laki">Laki-Laki</label>
-            <input type="radio" id="perempuan" name="gender" value="Perempuan" class="gender">
+            <input type="radio" id="perempuan" name="gender" value="Perempuan" class="gender" required>
             <label for="perempuan">Perempuan</label><br>
             <label for="pesan">Pesan:</label><br>
-            <textarea id="message" name="message" placeholder="Pesan"></textarea><br>
+            <textarea id="message" name="message" placeholder="Pesan" required></textarea><br>
             <div>
-                <button id="submit" class="btn btn-green" onclick="submit()">Submit</button>
+                <button id="submit" type="submit" class="btn btn-green" onclick="submit()">Submit</button>
             </div>
         </div>
         <div id="result">
