@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Revou</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 
 </head>
 
@@ -15,21 +14,50 @@
     <nav class="navbar">
         <img src="assets/logo.png" alt="logo" class="logo">
         <ul class="nav-items">
-            <li>home</li>
-            <li>Our profile</li>
-            <li>Achievement</li>
-            <li>Message us</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#facilitationslink">Facilitations</a></li>
+            <li><a href="#messageuslink">Message Us</a></li>
+            <li><a href="#aboutmelink">About Me</a></li>
+            <!-- <li>Our profile</li> -->
+            <!-- <li>Achievement</li> -->
+            <!-- <li>Message us</li> -->
         </ul>
     </nav>
 
     <!-- Header -->
     <header>
         <h1>Hi <span id="namasaya"></span> Welcome to our website</h1>
-        <img src="assets/school.png" alt="School">
-    </header>
+        <div class="slideshow-container">
 
+            <div class="slideshow-container">
+                <!-- Tambahkan kelas "mySlides" pada setiap elemen yang ingin Anda tampilkan dalam slider -->
+                <div class="mySlides fade">
+                    <img src="assets/school.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="assets/school2.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="assets/school3.png" style="width:100%">
+                </div>
+                
+            </div>
+                <br>
+                
+                <!-- Tambahkan titik navigasi -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+                
+            <script src="js/script.js"></script>
+        <!-- <img src="assets/school.png" alt="School"> -->
+    </header>
     <!-- Facilitations -->
-    <h2 style="margin-left: 170px;">Facilitations</h2>
+    <h2 id="facilitationslink" style="margin-left: 170px;">Facilitations</h2>
     <div class="facilitations">
         <div>
             <div class="cicle" style="background-image: url('assets/teacher.jpg');"></div>
@@ -46,9 +74,9 @@
     </div><hr>
 
     <!-- Message Us -->
-    <div class="message_us">
+    <div id="messageuslink" class="message_us">
         <div>
-            <h2>Message Us</h2>
+            <h2 style="margin-bottom: 50px;">Message Us</h2>
             <label for="name">Nama :</label>
             <input type="text" class="ipt" id="name" name="name" placeholder="Nama"><br>
             <label for="birthdate">Tanggal Lahir :</label>
@@ -58,7 +86,7 @@
             <label for="laki">Laki-Laki</label>
             <input type="radio" id="perempuan" name="gender" value="Perempuan" class="gender">
             <label for="perempuan">Perempuan</label><br>
-                        <label for="pesan">Pesan:</label><br>
+            <label for="pesan">Pesan:</label><br>
             <textarea id="message" name="message" placeholder="Pesan"></textarea><br>
             <div>
                 <button id="submit" class="btn btn-green" onclick="submit()">Submit</button>
@@ -75,10 +103,29 @@
         </div>
     </div><hr>
 
+    <!-- About Me -->
+
+    <h2 id="aboutmelink" style="margin-left: 170px;">About Me</h2>
+    <div class="aboutme">
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda perferendis, sapiente quis autem tenetur eos nisi molestiae excepturi aut vero dignissimos natus veniam eius inventore debitis fugit quia ad sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus commodi adipisci facere eveniet, temporibus corporis dignissimos nemo saepe et quas corrupti voluptatibus aliquid quis modi praesentium in earum beatae, culpa aperiam eligendi numquam qui atque? Aperiam error, dolor animi pariatur itaque porro velit enim harum ad architecto dolorem consequuntur maxime dolores vel quasi neque delectus excepturi voluptas sint. Sit, numquam dicta quam laudantium autem deleniti minima repellat aut possimus labore reiciendis? Iste harum obcaecati voluptas illum dolorum omnis ipsum, soluta eligendi debitis expedita corporis fugit molestias veritatis facilis cum aut. Id ex voluptas nesciunt neque qui maxime debitis quasi culpa beatae sed, aliquam vitae consequatur aspernatur tempore. 
+        </div><br>
+        <div class="container">
+                        
+            Hic animi non ad, necessitatibus ratione officiis ea possimus enim dignissimos impedit assumenda sint minima magni consequuntur nihil. Pariatur corporis, perferendis veritatis explicabo possimus deserunt quia voluptatem accusamus ducimus, saepe tempora officiis. Maxime blanditiis consequuntur eligendi nesciunt explicabo dignissimos, doloremque quibusdam tempora porro reiciendis, accusamus exercitationem laudantium numquam eius! Quisquam impedit delectus rem suscipit ab eius minima labore, omnis ea maiores. Velit cumque error harum laboriosam itaque unde, qui quia rerum soluta, deserunt magni ipsa maxime sint accusantium aspernatur? Provident aspernatur a veniam! Reiciendis id veniam voluptate dicta, doloremque error quasi ipsum pariatur exercitationem, ab facilis illo. Expedita nostrum error illum culpa porro sint deserunt voluptatem vel obcaecati ratione? Animi temporibus autem voluptates ea fugiat magni molestiae. Quo ipsa id ratione totam fugit exercitationem, aspernatur assumenda cupiditate doloremque fugiat! Unde earum recusandae exercitationem nesciunt ullam eos voluptatem perferendis cum, aliquid libero suscipit labore? Adipisci cupiditate qui aliquid vero aliquam officia aspernatur quod iusto recusandae eum? Error at animi ea suscipit atque, repellendus voluptatem, officiis natus nam amet consequuntur? Nemo earum assumenda quisquam et nesciunt inventore dicta autem, ex accusamus reprehenderit explicabo quidem, facilis maiores exercitationem ut a. Molestias facilis voluptates delectus aliquam?
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam a optio exercitationem facilis ut magni suscipit, minima nisi temporibus maxime velit, hic corrupti minus quidem. Nemo repellendus, aut in, repellat quis ipsam fugit modi deserunt explicabo voluptates impedit similique, architecto assumenda quae! Distinctio explicabo suscipit dolor sapiente sequi nam corporis!
+        </div><br>
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda perferendis, sapiente quis autem tenetur eos nisi molestiae excepturi aut vero dignissimos natus veniam eius inventore debitis fugit quia ad sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus commodi adipisci facere eveniet, temporibus corporis dignissimos nemo saepe et quas corrupti voluptatibus aliquid quis modi praesentium in earum beatae, culpa aperiam eligendi numquam qui atque? Aperiam error, dolor animi pariatur itaque porro velit enim harum ad architecto dolorem consequuntur maxime dolores vel quasi neque delectus excepturi voluptas sint. Sit, numquam dicta quam laudantium autem deleniti minima repellat aut possimus labore reiciendis? Iste harum obcaecati voluptas illum dolorum omnis ipsum, soluta eligendi debitis expedita corporis fugit molestias veritatis facilis cum aut. Id ex voluptas nesciunt neque qui maxime debitis quasi culpa beatae sed, aliquam vitae consequatur aspernatur tempore. 
+        </div><br>
+    </div><hr>
+
     <!-- Footer -->
     <footer>
 		<p>Created by Rifqi Anshari</p>
 	</footer>
+    <script src="js/script.js"></script>
     <script>
         var elemen = document.getElementById("namasaya");
         elemen.innerHTML = "Rifqi Anshari " + elemen.innerHTML;
